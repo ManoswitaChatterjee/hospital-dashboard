@@ -13,11 +13,11 @@ A comprehensive dashboard built to analyze and derive insights regarding hospita
 3. This dataset contains fictional hospital data hospital data including patient details, admission/discharge dates, department, diagnosis, and billing information.
 
 ### KPIs 
-1. **Patients -** This KPI represents the total revenue generated from all sales transactions.
-   **Formula :** Total Sales = SUM(Sales)
+1. **Patients -** This KPI represents the total number of patients hospitalized in the hospital.
+   **Formula :** Count(Name)
    
-2. **Avg. Bill (usd) -** This measures the profitability by comparing profit against sales, indicating how efficiently the business generates profit.
-   **Formula:** Profit Margin = SUM(Profit) / SUM(Sales)
+2. **Avg. Bill (usd) -** This KPI lists the average bill charged per person in the hospital i.e the avergae bill one can expect if being hospitalized.
+   **Formula:** Average(Billing Amount)
    
 --------------------------------------------------
 ### Analysis
@@ -68,7 +68,8 @@ These two tables display the top 3 and bottom 3 states in terms of sales perform
 
 ### Final Dashboard 
 
-![Screenshot_10](https://github.com/user-attachments/assets/b14082a5-52ec-4fbd-83ad-b8207546dee5)
+![Screenshot_23](https://github.com/user-attachments/assets/a44c2a7b-793b-4f23-a9dd-64f761dbae76)
+
 
 ### Filters 
 1. **Order Year -** To filter sales data by specific years, enabling year-over-year comparisons and analysis of long-term trends.
