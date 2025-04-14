@@ -28,9 +28,6 @@ I specifically choose the above KPIs to help get an overall idea about the ales 
 
 1. Total Sales Count - 2,297,201
 2. Profit Margin - 12.47 %
-3. Total Orders Count - 9,994
-4. Region with Highest Sales - West
-5. Customer Return Rate - 2.96 %
 
 ![Screenshot_5](https://github.com/user-attachments/assets/ed12f5b0-b574-4910-bfa6-7297ff640528)
 
