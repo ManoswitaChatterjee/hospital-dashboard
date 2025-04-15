@@ -37,7 +37,26 @@ This was corrected with proper First Name and Last name capitalization
   
 5. **Changed Type1 -** Changed the type of the new column to Whole Number.
 
-6. **Rounded Off -** Rounded off the "Billing Amount" column vales to two decimal places.
+6. **Rounded Off -** Rounded off the "Billing Amount" column values to two decimal places.
+
+### DAX query 
+Created a new column called "Age Group" to categorize patients in 7 age categories. This helps to vizualize and understand patient data easily.
+The query - 
+```
+Age Group = 
+SWITCH(
+    TRUE(),
+    'healthcare_dataset'[Age] < 18, "0-18",
+    'healthcare_dataset'[Age] >= 18 && 'healthcare_dataset'[Age] <= 24, "18-24",
+    'healthcare_dataset'[Age] >= 25 && 'healthcare_dataset'[Age] <= 34, "25-34",
+    'healthcare_dataset'[Age] >= 35 && 'healthcare_dataset'[Age] <= 44, "35-44",
+    'healthcare_dataset'[Age] >= 45 && 'healthcare_dataset'[Age] <= 54, "45-54",
+    'healthcare_dataset'[Age] >= 55 && 'healthcare_dataset'[Age] <= 64, "55-64",
+    'healthcare_dataset'[Age] >= 65, "65+",
+    "Unknown"
+)
+```
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ### KPIs 
 1. **Patients -** This KPI represents the total number of patients hospitalized in the hospital.
