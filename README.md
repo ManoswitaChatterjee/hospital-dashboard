@@ -12,6 +12,28 @@ A comprehensive dashboard built to analyze and derive insights regarding hospita
 1. All the data used in this dashboard is from the "healthcare_dataset", available in Kaggle (https://www.kaggle.com/datasets/prasad22/healthcare-dataset?resource=download)
 3. This dataset contains fictional hospital data hospital data including patient details, admission/discharge dates, department, diagnosis, and billing information.
 
+### Data Cleaning - Power BI
+
+#### Steps followed - 
+![Screenshot_19](https://github.com/user-attachments/assets/68a3c8b0-f08c-4d81-bc67-4d277fc8876f)
+
+
+1. **Changed Type -** Changed the type of the following cloumns from "text" to their appropriate types.
+  "Age" and "Room Number" to Whole Number
+  "Date of Admission" and "Discharge Date" to Date
+  "Billing Amount" to Decimal Number
+
+2. **Capitalized Each Word -** For the column "Name", the data was as follows
+![Screenshot_23](https://github.com/user-attachments/assets/79925f66-9112-4600-b1ee-5e5be1c08f29)
+This was corrected with proper First Name and Last name capitalization
+![Screenshot_27](https://github.com/user-attachments/assets/73e70a7e-7cd2-4e23-979f-10ee8444fba4)
+
+3. **Added Custom -** Created a new column in the data called "Hospitalization Duration (days)" to calculate the total number of days a patient is hospitalized. It is calculated as adifference of "Date of Admission" and "Discharge Date" columns.
+  
+4. **Changed Type1 -** Changed the type of the new column to Whole Number.
+
+5. **Rounded Off -** Rounded off the "Billing Amount" column vales to two decimal places.
+
 ### KPIs 
 1. **Patients -** This KPI represents the total number of patients hospitalized in the hospital.
    **Formula :** Count(Name)
@@ -19,7 +41,6 @@ A comprehensive dashboard built to analyze and derive insights regarding hospita
 2. **Avg. Bill (usd) -** This KPI lists the average bill charged per person in the hospital i.e the avergae bill one can expect if being hospitalized.
    **Formula:** Average(Billing Amount)
    
---------------------------------------------------
 ### Analysis
 This dashboard aims to provide a detailed analysis of hospital performance and patient-related trends using key healthcare indicators.
 
