@@ -23,10 +23,12 @@ A comprehensive dashboard built to analyze and derive insights regarding hospita
   "Date of Admission" and "Discharge Date" to Date
   "Billing Amount" to Decimal Number
 
-2. **Capitalized Each Word -** For the column "Name", the data was as follows
+2. **Capitalized Each Word -** For the column "Name", the data was as follows.
+
 ![Screenshot_23](https://github.com/user-attachments/assets/79925f66-9112-4600-b1ee-5e5be1c08f29)
 
 This was corrected with proper First Name and Last name capitalization
+
 ![Screenshot_27](https://github.com/user-attachments/assets/73e70a7e-7cd2-4e23-979f-10ee8444fba4)
 
 4. **Added Custom -** Created a new column in the data called "Hospitalization Duration (days)" to calculate the total number of days a patient is hospitalized. It is calculated as adifference of "Date of Admission" and "Discharge Date" columns.
