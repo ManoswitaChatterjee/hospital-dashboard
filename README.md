@@ -12,6 +12,8 @@ A comprehensive dashboard built to analyze and derive insights regarding hospita
 1. All the data used in this dashboard is from the "healthcare_dataset", available in Kaggle (https://www.kaggle.com/datasets/prasad22/healthcare-dataset?resource=download)
 3. This dataset contains fictional hospital data hospital data including patient details, admission/discharge dates, department, diagnosis, and billing information.
 
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 ### Data Cleaning - Power BI
 
 #### Steps followed - 
