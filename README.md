@@ -25,14 +25,15 @@ A comprehensive dashboard built to analyze and derive insights regarding hospita
 
 2. **Capitalized Each Word -** For the column "Name", the data was as follows
 ![Screenshot_23](https://github.com/user-attachments/assets/79925f66-9112-4600-b1ee-5e5be1c08f29)
+
 This was corrected with proper First Name and Last name capitalization
 ![Screenshot_27](https://github.com/user-attachments/assets/73e70a7e-7cd2-4e23-979f-10ee8444fba4)
 
-3. **Added Custom -** Created a new column in the data called "Hospitalization Duration (days)" to calculate the total number of days a patient is hospitalized. It is calculated as adifference of "Date of Admission" and "Discharge Date" columns.
+4. **Added Custom -** Created a new column in the data called "Hospitalization Duration (days)" to calculate the total number of days a patient is hospitalized. It is calculated as adifference of "Date of Admission" and "Discharge Date" columns.
   
-4. **Changed Type1 -** Changed the type of the new column to Whole Number.
+5. **Changed Type1 -** Changed the type of the new column to Whole Number.
 
-5. **Rounded Off -** Rounded off the "Billing Amount" column vales to two decimal places.
+6. **Rounded Off -** Rounded off the "Billing Amount" column vales to two decimal places.
 
 ### KPIs 
 1. **Patients -** This KPI represents the total number of patients hospitalized in the hospital.
