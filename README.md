@@ -1,8 +1,8 @@
 # Hospital-dashboard
-It is an Interactive dashboard to help visualize and analyze key hospital performance metrics for data-driven insights and decision making.
+It is an Interactive dashboard to help visualize and analyze key patient and hospital performance metrics for data-driven insights and decision making.
 
 ### Introduction
-A comprehensive dashboard built to analyze and derive insights regarding hospital admission numbers, patient details, and healthcare KPIs using real-world hospital data.
+A comprehensive dashboard built to analyze and derive insights regarding hospital admission numbers, hospitals admitted to, patient details, and healthcare KPIs using real-world hospital data.
 
 ### Goal 
 1. To perform data cleaning to ensure data quality and consistency
@@ -21,71 +21,79 @@ A comprehensive dashboard built to analyze and derive insights regarding hospita
    
 --------------------------------------------------
 ### Analysis
-The main objective of this report is to nalyze sales performance and profitability trends across the United States.
-I specifically choose the above KPIs to help get an overall idea about the ales growth, regional profitability, and customer behaviour from the data. This in turn allows to understand the current standing of the sales and which area needs more focus to help with business growth.
+This dashboard aims to provide a detailed analysis of hospital performance and patient-related trends using key healthcare indicators.
+
+The dashboard offers a broad understanding of patient admissions, hospitalization duration, and overall hospital metrices. By highlighting these areas, the report supports better understanding for people like - what bill they might expect, best insurance provider and so on.
 
 ### Overview 
 
-1. Total Sales Count - 2,297,201
-2. Profit Margin - 12.47 %
+1. Total Patient Count - 55.50k
+2. Average Bill for patients (in usd) - 25.54k
 
-![Screenshot_5](https://github.com/user-attachments/assets/ed12f5b0-b574-4910-bfa6-7297ff640528)
+![Screenshot_15](https://github.com/user-attachments/assets/17b7424c-6248-4c80-99ea-a29e150d69b6)
 
 #### Insight:
-Focus should be on increasing the Profit Margin and lowering the return rate to help with overall business flow.
+Helps to understand the amount of bill one might expect if hospitalized in the hospital.
 
-#### Sales visualization on United States Map with Tooltip
+#### Average Billing Amount by Insurance Provider
 
-The US map shows distribution of sales across states over the years with a tooltip to easily get details for each state separately.
+This Donut chart shows which insurance provider is mostly availed by the hospitalized patients. "Medicare" ranks first by a small margin.
 
-![Screenshot_6](https://github.com/user-attachments/assets/1dae1d04-e6bd-41eb-8b55-1afc049e334b)
+![Screenshot_17](https://github.com/user-attachments/assets/20c663be-3616-4081-83fa-bfa1adfc918d)
 
-#### Sales monthly growth chart - state-wise 
+#### Average Billing Amount by Age Group
 
-This table shows sales performance and month-over_month sales growth across each state. It highlights seasonal fluctuations and regional variations, allowing for a detailed comparison of sales growth over time in different states.
+This bar chart categorizes patients in age groups and shows which age group gets the higher end of the hosiptal bill.
 
-![Screenshot_7](https://github.com/user-attachments/assets/35f3b0d1-0bc9-49d1-8bc5-73f740a6adf9)
+![Screenshot_18](https://github.com/user-attachments/assets/50c0e8ac-0e88-4817-81cc-f4b4ffb335cb)
 
-#### Sales over Time
+#### Hospitalization Duration (days) by Age Group
 
-This line chart illustrates sales trends over time on a monthly basis. It tracks monthly  sales fluctuations within the United States. It reveals patterns in sales growth, highlighting peaks and troughs across different periods, which helps in understanding seasonal demand and overall sales trajectory. 
-1. This data shows that there is a surge in sales in the months of November and December for every year from 2014 to 2017.
-2. The 'Order Year' filter allows you to check sales details for every year separately to help understand the sales growth over time. 
+This line chart displays which age group patients has to be hospitalized for an average of how many days with obvioulsy 65+ people average being the higehest at about 15.59 days.
 
-![Screenshot_8](https://github.com/user-attachments/assets/ad304d72-1c47-4377-9c9a-78d051147b27)
+![Screenshot_21](https://github.com/user-attachments/assets/3a242b92-c38f-4bfe-a0e2-1a1a8d883399)
 
-#### Top / Bottom States by sales
 
-These two tables display the top 3 and bottom 3 states in terms of sales performance, providing insights into regional strengths and weaknesses.
-1. Top 3 States Table: Highlights the states generating the highest sales, showcasing areas with the strongest performance.
-2. Bottom 3 States Table: Identifies the states with the lowest sales, helping to pinpoint regions requiring improvement or further analysis.
-3. From our data, the best performing state of all time in terms of sales is California and the worst performing state is North Dakota.
+#### Count of Name by Admission Type
 
-![Screenshot_9](https://github.com/user-attachments/assets/6875351e-16ff-4c2b-bf69-a21a4407c7cb)
+This pie chart displays the distribution of admission type in the hospital. Most patients are hospitalized under elective.
+
+![Screenshot_25](https://github.com/user-attachments/assets/bceca7d3-d4ef-4deb-acad-96f44adb1ff4)
+
+#### Count of Patients by Doctor
+
+It displays the top 3 doctors who have treated the most patients with "Michael Smith" being at the first position with a count of 27 patients under him.
+
+![Screenshot_20](https://github.com/user-attachments/assets/d51c361b-1471-4266-ae49-51ad68a63a25)
+
+#### Average Age by Gender
+
+It displays the gender ratio of patients admitted to the hospitals with the female patient count being slightly higher.
+
+![Screenshot_22](https://github.com/user-attachments/assets/047e1c66-aafc-441c-a200-87db84c3ae9a)
 
 ### Final Dashboard 
 
-![Screenshot_23](https://github.com/user-attachments/assets/a44c2a7b-793b-4f23-a9dd-64f761dbae76)
-
+![Screenshot_26](https://github.com/user-attachments/assets/523d2318-e28c-444c-aaf5-99267889773f)
 
 ### Filters 
-1. **Order Year -** To filter sales data by specific years, enabling year-over-year comparisons and analysis of long-term trends.
-2. **Order Month -** To filter data by month, which helps in examining seasonal sales patterns and monthly performance fluctuations.
-3. **Agent Name -** This filters data by sales manager, allowing users to view performance metrics for each manager within their designated region.
-4. **Region -** To filter data by major geographical regions, such as East, West, South, and Central, facilitating regional performance analysis.
-5. **State -**  This filters data by individual U.S. states, providing a closer look at sales performance at the state level.
+1. **Admission Year -** To filter patients data w.r.t the year they are admitted in the hospital.
+2. **Age Group -** To filter data by patient age group.
+3. **Medical Condition -** This filters patients by their diagnosed medical condition.
+4. **Hospital -** To filter data by the hospital name.
+5. **Insurance Provider -**  This filters data by the insurance provider patients are under.
+
+![Screenshot_16](https://github.com/user-attachments/assets/30d03354-8718-4573-bb48-0824b0cf1cd3)
+
 
 ### Conclusion 
 
-The USA Sales performance dashboard provided a comprehensive analysis of regional and state-level sales trends using the Sample Superstore dataset. The analysis highlighted key performance metrics and revealed valuable insights into sales growth, profitability, and customer behaviour across the United States.
+The Hospital-dashboard provides a analysis of both hospital and patient data using the sample kaggle data set. The data is first cleaned and made appropriate for analysis and the vizualized into the dashboard using Power BI. The report highlighted essential performance metrics and uncovered valuable insights into hospital utilization, patient trends, and operational efficiency.
 
 #### Recommendations and Key Takeaways
 
-1. Top Performing Regions: Regions like the West and Central consistently demonstrated a better sales performance over the years, suggesting strategies in these regions could be replicated elsewhere.
-2. Opportunities for Improvement: States with lower sales, identified through the bottom 3 analysis, present opportunities for targeted marketing and sales initiatives to drive growth.
-3. Seasonal Trends: Monthly sales trends revealed predictable peaks and troughs. This inturn allows for better capital management and inventory management.
-4. Agent Contributions: Insights into sales manager (Agent Name) performance help pinpoint high-performing managers and identify areas where additional support may be needed.
+1. Unsurprisingly 65+ people are hospitalized for the most number of days and thus need more attention and regular check-ups.
+2. Patients with 0-18 age have higher bill amount which may indicate that they are mostly hospitalized for some serious injury or immediate operations.
+3. The KPI "Avg. Bill (Usd) indicates that a patient if hospitalized can expect an average bill amount of $25,540. Ofcourse this data varies hospital to hospital and can be checked using the "Hospital" filter.
 
-This project helps to visualize data and uncover insights to help make more informed decisions for sales strategy and performance optimization for business.
-
-Your feedback and thoughts on this analysis are greatly appreciated!
+This project helps visualize data and uncover insights, enabling both patients and hospitals to understand key metrics and support better decision-making for patient care and hospital operations.
